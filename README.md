@@ -12,7 +12,7 @@
 
 适用于自用节点定期刷新、服务器启动自动初始化、或小白用户简化流程。
 
-> 🔁 当前仅支持上传并覆盖 `jh.txt` 文件，Clash_Meta 与 sing-box 的适配功能尚在开发中，暂不可用。
+**🔁 当前仅支持上传并覆盖 `jh.txt` 文件，Clash_Meta 与 sing-box 的适配功能尚在开发中，暂不可用。**
 
 ---
 
@@ -21,8 +21,8 @@
 请提前准备以下信息（均为必填）：
 
 - `uuid`：你的节点唯一标识
-- `vmpt`：本地转发端口号
-- `agn`：固定域名（如：idx.witile.org）
+- `vmpt`：端口号
+- `agn`：固定域名
 - `agk`：从 ArgoSB 获取的授权参数（以 `ey` 开头）
 - `TOKEN`：GitLab 的 Private Token（需写入权限）
 - `GIT_USER`：你的 GitLab 用户名
@@ -38,7 +38,7 @@
 ```bash
 uuid="你的uuid" vmpt="你的端口" agn="固定域名" agk="ey开头的密钥" \
 TOKEN="你的token" GIT_USER="你的用户名" GIT_EMAIL="你的邮件" PROJECT="你的项目" \
-bash <(curl -Ls https://raw.githubusercontent.com/你的用户名/auto-argosb/main/setup.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/guangwit9/ArgoSBAUTO/main/ArgoSBAUTO.sh)
 ```
 
 ✅ 特点：
@@ -76,7 +76,7 @@ export GIT_USER="你的GitLab用户名"
 export GIT_EMAIL="你的邮箱"
 export PROJECT="你的GitLab项目名"
 
-bash <(curl -Ls https://raw.githubusercontent.com/你的用户名/auto-argosb/main/setup.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/guangwit9/ArgoSBAUTO/main/ArgoSBAUTO.sh)
 ```
 
 ---
@@ -97,7 +97,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/你的用户名/auto-argosb/ma
 - 你可使用以下命令查看源码：
 
 ```bash
-curl -Ls https://raw.githubusercontent.com/你的用户名/auto-argosb/main/setup.sh | less
+curl -Ls https://raw.githubusercontent.com/guangwit9/ArgoSBAUTO/main/ArgoSBAUTO.sh | less
 ```
 
 建议使用最小权限 Token，必要时手动撤销以保证安全。

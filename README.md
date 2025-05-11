@@ -32,8 +32,8 @@
 - `uuid`：你的节点唯一标识
 - `vmpt`：端口号
 - `agn`：固定域名
-- `agk`：从 ArgoSB 获取的授权参数（以 `ey` 开头）
-- `TOKEN`：GitLab 的 Private Token（需写入权限）
+- `agk`：以 `ey` 开头密钥
+- `TOKEN`：你的GitLab 项目 Token
 - `GIT_USER`：你的 GitLab 用户名
 - `GIT_EMAIL`：你的 GitLab 邮箱
 - `PROJECT`：你的 GitLab 项目名

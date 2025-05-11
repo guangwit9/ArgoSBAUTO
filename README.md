@@ -21,7 +21,7 @@
 
 * 请确保在 GitLab 项目设置中：
 
-  * <b><span style="color:red;">Settings → Repository → Protected branches 中启用 Allowed to force push</span></b>
+  <b><span style="color:red;">Settings → Repository → Protected branches 中启用 Allowed to force push</span></b>
 
 请提前准备以下信息（均为必填）：
 

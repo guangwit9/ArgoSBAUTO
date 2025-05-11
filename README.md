@@ -9,7 +9,7 @@
 ```bash
 uuid=你的uuid \
 vmpt=你的端口 \
-agn=idx.witile.org \
+agn=固定域名 \
 agk=ey开头的密钥 \
 TOKEN=你的GitLab访问Token \
 GIT_USER=你的Git用户名 \

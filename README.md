@@ -19,16 +19,13 @@
 
 ## 🛠 使用前准备
 
-### 🔐 GitLab 设置提醒
+  ### 🔐 GitLab 设置提醒
 
-请在你的 GitLab 项目设置中完成以下配置：
+  请在你的 GitLab 项目设置中完成以下配置：
 
-- 打开：`Settings → Repository → Protected branches`
-- 启用：**Allow force push**
-- 使用 Token 时，建议设置为最小权限（仅允许 push），并注意 Token 的有效期与保存方式
-
----
-
+  - 打开：`Settings → Repository → Protected branches`
+  - 启用：**Allow force push**
+  - 使用 Token 时，建议设置为最小权限（仅允许 push），并注意 Token 的有效期与保存方式
 
 请提前准备以下信息（均为必填）：
 

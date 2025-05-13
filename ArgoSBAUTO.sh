@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # 参数检查
+: "${nix:?必须提供 nix}"
 : "${uuid:?必须提供 uuid}"
 : "${vmpt:?必须提供 vmpt}"
 : "${agn:?必须提供 agn}"
@@ -11,7 +12,7 @@
 : "${PROJECT:?必须提供 PROJECT}"
 
 echo "[1/3] 安装 ArgosB..."
-sudo bash -c "uuid='${uuid}' vmpt='${vmpt}' agn='${agn}' agk='${agk}' bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)"
+sudo bash -c "nix='${nix}' uuid='${uuid}' vmpt='${vmpt}' agn='${agn}' agk='${agk}' bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)"
 
 sleep 5
 

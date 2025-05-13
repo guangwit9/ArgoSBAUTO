@@ -1,7 +1,6 @@
 #!/bin/bash
 
-# 参数检查
-: "${nix:?必须提供 nix}"
+# 参数检查（nix 为可选）
 : "${uuid:?必须提供 uuid}"
 : "${vmpt:?必须提供 vmpt}"
 : "${agn:?必须提供 agn}"
@@ -12,7 +11,12 @@
 : "${PROJECT:?必须提供 PROJECT}"
 
 echo "[1/3] 安装 ArgosB..."
-sudo bash -c "nix='${nix}' uuid='${uuid}' vmpt='${vmpt}' agn='${agn}' agk='${agk}' bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)"
+
+# 构建安装命令，只有在 nix 被设置时才加入
+install_cmd="uuid='${uuid}' vmpt='${vmpt}' agn='${agn}' agk='${agk}'"
+[ -n "${nix}" ] && install_cmd="nix='${nix}' $install_cmd"
+
+sudo bash -c "$install_cmd bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)"
 
 sleep 5
 

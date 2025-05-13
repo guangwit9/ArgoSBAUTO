@@ -42,7 +42,7 @@
 
 ## 🚀 一行命令自动部署（推荐）
 
-带`nix`的方式：
+带`nix`的方式："甬哥的reset之后不用再输命令的，等有时间我去瞅瞅怎么放进来"
 
 ```bash
 nix=y uuid="你的uuid" vmpt="你的端口" agn="固定域名" agk="ey开头的密钥" \
@@ -65,7 +65,6 @@ bash <(curl -Ls https://raw.githubusercontent.com/guangwit9/ArgoSBAUTO/main/Argo
 - 全流程无交互，适合远程自动运行
 
 ---
-
 
 ## 🧰 高级用法：自动脚本集成
 

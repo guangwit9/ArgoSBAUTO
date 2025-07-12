@@ -77,6 +77,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/guangwit9/ArgoSBAUTO/main/Argo
 #!/bin/bash
 export uuid="你的uuid"
 export vmpt="你的端口"
+export argo="y"
 export agn="你的域名"
 export agk="你的agk密钥"
 export TOKEN="你的GitLab Token"

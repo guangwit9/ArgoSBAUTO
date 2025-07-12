@@ -31,6 +31,7 @@
 
 - `uuid`：你的节点唯一标识
 - `vmpt`：端口号
+- `argo`：y
 - `agn`：固定域名
 - `agk`：以 `ey` 开头密钥
 - `TOKEN`：你的GitLab 项目 Token
@@ -45,7 +46,7 @@
 带`nix`的方式："甬哥的reset之后不用再输命令的，等有时间我去瞅瞅怎么放进来"
 
 ```bash
-nix=y uuid="你的uuid" vmpt="你的端口" agn="固定域名" agk="ey开头的密钥" \
+nix=y uuid="你的uuid" vmpt="你的端口" argo="y" agn="固定域名" agk="ey开头的密钥" \
 TOKEN="你的token" GIT_USER="你的用户名" GIT_EMAIL="你的邮件" PROJECT="你的项目" \
 bash <(curl -Ls https://raw.githubusercontent.com/guangwit9/ArgoSBAUTO/main/ArgoSBAUTO.sh)
 ```

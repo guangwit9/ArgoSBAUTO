@@ -54,7 +54,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/guangwit9/ArgoSBAUTO/main/Argo
 将以下命令中的参数替换为你的实际信息，即可一键完成所有流程：
 
 ```bash
-uuid="你的uuid" vmpt="你的端口" agn="固定域名" agk="ey开头的密钥" \
+uuid="你的uuid" vmpt="你的端口" argo="y" agn="固定域名" agk="ey开头的密钥" \
 TOKEN="你的token" GIT_USER="你的用户名" GIT_EMAIL="你的邮件" PROJECT="你的项目" \
 bash <(curl -Ls https://raw.githubusercontent.com/guangwit9/ArgoSBAUTO/main/ArgoSBAUTO.sh)
 ```

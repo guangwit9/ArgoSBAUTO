@@ -14,9 +14,13 @@
 echo "[1/3] 安装 ArgosB..."
 
 # 构建安装命令
-install_cmd="uuid='${uuid}' vmpt='${vmpt}' argo='${argo}' agn='${agn}' agk='${agk}'"
-
-sudo bash -c "$install_cmd bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)"
+# 这种方法直接为单个命令设置环境变量，是更推荐的做法。
+uuid="${uuid}" \
+vmpt="${vmpt}" \
+argo="${argo}" \
+agn="${agn}" \
+agk="${agk}" \
+bash <(curl -Ls https://raw.githubusercontent.com/yonggekkk/argosb/main/argosb.sh)
 
 sleep 5
 
